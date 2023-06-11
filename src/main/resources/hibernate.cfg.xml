@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/librarymanagement</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="connection.pool_size">1000</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+
+        <mapping class="com.example.librarymanagement.model.account.UserAccount"/>
+        <mapping class="com.example.librarymanagement.model.account.UserPrevPass"/>
+        <mapping class="com.example.librarymanagement.model.book.Book"/>
+        <mapping class="com.example.librarymanagement.model.book.Publisher"/>
+        <mapping class="com.example.librarymanagement.model.book.Subject"/>
+        <mapping class="com.example.librarymanagement.model.book.Writer"/>
+        <mapping class="com.example.librarymanagement.model.operation.BorrowRequest"/>
+        <mapping class="com.example.librarymanagement.model.operation.DonationRequest"/>
+        <mapping class="com.example.librarymanagement.model.operation.Order"/>
+        <mapping class="com.example.librarymanagement.model.operation.Payment"/>
+        <mapping class="com.example.librarymanagement.model.user.Member"/>
+        <mapping class="com.example.librarymanagement.model.user.Staff"/>
+        <mapping class="com.example.librarymanagement.model.user.User"/>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,19 @@
+module com.example.librarymanagement {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires javafx.web;
+
+    requires org.controlsfx.controls;
+    requires com.dlsc.formsfx;
+    requires validatorfx;
+    requires org.kordamp.ikonli.javafx;
+    requires org.kordamp.bootstrapfx.core;
+    requires eu.hansolo.tilesfx;
+    requires com.almasb.fxgl.all;
+    requires org.hibernate.orm.core;
+
+    opens com.example.librarymanagement to javafx.fxml;
+    exports com.example.librarymanagement;
+    exports com.example.librarymanagement.controller;
+    opens com.example.librarymanagement.controller to javafx.fxml;
+}
