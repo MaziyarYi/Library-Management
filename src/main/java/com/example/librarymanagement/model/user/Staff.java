@@ -1,20 +1,17 @@
 package com.example.librarymanagement.model.user;
 
-import com.example.librarymanagement.model.account.UserAccount;
-import com.example.librarymanagement.util.Enum.Gender;
-
 public class Staff extends User{
 
-    private int staffId;
+    private String staffId;
 
     public Staff() {
     }
 
-    public int getStaffId() {
+    public String getStaffId() {
         return staffId;
     }
 
-    public void setStaffId(int staffId) {
+    public void setStaffId(String staffId) {
         this.staffId = staffId;
     }
 }

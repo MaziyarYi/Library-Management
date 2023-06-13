@@ -12,8 +12,10 @@
         <property name="connection.pool_size">1000</property>
         <property name="hbm2ddl.auto">create-drop</property>
 
-        <mapping class="com.example.librarymanagement.model.account.UserAccount"/>
-        <mapping class="com.example.librarymanagement.model.account.UserPrevPass"/>
+        <mapping class="com.example.librarymanagement.model.user.UserAccount"/>
+        <mapping class="com.example.librarymanagement.model.user.User"/>
+        <mapping class="com.example.librarymanagement.model.user.Member"/>
+        <mapping class="com.example.librarymanagement.model.user.Staff"/>
         <mapping class="com.example.librarymanagement.model.book.Book"/>
         <mapping class="com.example.librarymanagement.model.book.Publisher"/>
         <mapping class="com.example.librarymanagement.model.book.Subject"/>
@@ -22,8 +24,5 @@
         <mapping class="com.example.librarymanagement.model.operation.DonationRequest"/>
         <mapping class="com.example.librarymanagement.model.operation.Order"/>
         <mapping class="com.example.librarymanagement.model.operation.Payment"/>
-        <mapping class="com.example.librarymanagement.model.user.Member"/>
-        <mapping class="com.example.librarymanagement.model.user.Staff"/>
-        <mapping class="com.example.librarymanagement.model.user.User"/>
     </session-factory>
 </hibernate-configuration>

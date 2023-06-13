@@ -11,6 +11,7 @@ module com.example.librarymanagement {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires org.hibernate.orm.core;
+    requires java.persistence;
 
     opens com.example.librarymanagement to javafx.fxml;
     exports com.example.librarymanagement;

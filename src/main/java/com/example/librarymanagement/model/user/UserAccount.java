@@ -1,4 +1,4 @@
-package com.example.librarymanagement.model.account;
+package com.example.librarymanagement.model.user;
 
 import com.example.librarymanagement.util.Enum.Role;
 
@@ -9,7 +9,7 @@ public class UserAccount {
     private Long id;
     private String username;
     private String password;
-    private Date createDate = new Date();
+    private Date createDate;
     private Role role;
 
     public UserAccount() {

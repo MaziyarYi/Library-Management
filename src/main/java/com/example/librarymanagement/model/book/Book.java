@@ -1,6 +1,7 @@
 package com.example.librarymanagement.model.book;
 
 import com.example.librarymanagement.util.Enum.BookStatus;
+import com.example.librarymanagement.util.Enum.PaymentStatus;
 
 public class Book {
 
@@ -69,5 +70,9 @@ public class Book {
 
     public void setStatus(BookStatus status) {
         this.status = status;
+    }
+
+    public boolean isBorrowed(){
+        return this.status.equals(BookStatus.Borrowed);
     }
 }

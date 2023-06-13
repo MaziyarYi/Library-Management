@@ -4,20 +4,20 @@ import com.example.librarymanagement.util.Enum.Gender;
 
 public class Member extends User{
 
-    private int memberId;
+    private String memberId;
     private int age;
     private Gender gender;
     private String phoneNumber;
-    private String Address;
+    private String address;
 
     public Member() {
     }
 
-    public int getMemberId() {
+    public String getMemberId() {
         return memberId;
     }
 
-    public void setMemberId(int memberId) {
+    public void setMemberId(String memberId) {
         this.memberId = memberId;
     }
 
@@ -46,10 +46,10 @@ public class Member extends User{
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        this.address = address;
     }
 }

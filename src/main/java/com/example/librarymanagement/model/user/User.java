@@ -1,7 +1,5 @@
 package com.example.librarymanagement.model.user;
 
-import com.example.librarymanagement.model.account.UserAccount;
-
 public class User {
 
     private Long id;

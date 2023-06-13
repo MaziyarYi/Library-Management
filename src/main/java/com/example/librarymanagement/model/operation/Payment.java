@@ -2,11 +2,15 @@ package com.example.librarymanagement.model.operation;
 
 import com.example.librarymanagement.util.Enum.PaymentStatus;
 
+import java.util.Date;
+
 public class Payment {
 
     private Long id;
+    private Order order;
     private PaymentStatus status;
     private Long price;
+    private Date paymentDate;
 
     public Payment() {
     }
@@ -17,6 +21,14 @@ public class Payment {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public PaymentStatus getStatus() {
@@ -33,6 +45,14 @@ public class Payment {
 
     public void setPrice(Long price) {
         this.price = price;
+    }
+
+    public Date getPaymentDate() {
+        return paymentDate;
+    }
+
+    public void setPaymentDate(Date paymentDate) {
+        this.paymentDate = paymentDate;
     }
 
     public boolean isPaid(){
