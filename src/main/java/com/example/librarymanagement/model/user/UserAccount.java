@@ -2,10 +2,14 @@ package com.example.librarymanagement.model.user;
 
 import com.example.librarymanagement.util.Enum.Role;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class UserAccount {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String username;
     private String password;

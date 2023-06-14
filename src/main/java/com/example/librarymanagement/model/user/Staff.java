@@ -1,5 +1,8 @@
 package com.example.librarymanagement.model.user;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Staff extends User{
 
     private String staffId;

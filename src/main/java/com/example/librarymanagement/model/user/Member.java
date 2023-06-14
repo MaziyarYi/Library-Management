@@ -2,6 +2,9 @@ package com.example.librarymanagement.model.user;
 
 import com.example.librarymanagement.util.Enum.Gender;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Member extends User{
 
     private String memberId;
