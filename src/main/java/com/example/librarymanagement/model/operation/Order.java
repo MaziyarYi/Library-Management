@@ -4,13 +4,22 @@ import com.example.librarymanagement.model.book.Book;
 import com.example.librarymanagement.model.user.Member;
 import com.example.librarymanagement.util.Enum.RequestStatus;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class Order {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
+    @OneToOne
     private Member buyer;
+
+    @OneToOne
     private Book book;
+
     private Date orderDate;
     private RequestStatus status;
 

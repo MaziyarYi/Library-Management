@@ -4,13 +4,22 @@ import com.example.librarymanagement.model.book.Book;
 import com.example.librarymanagement.model.user.Member;
 import com.example.librarymanagement.util.Enum.RequestStatus;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class BorrowRequest {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
+    @OneToOne
     private Member borrower;
+
+    @OneToOne
     private Book book;
+
     private Date fromDate;
     private Date toDate;
     private Long period;

@@ -5,12 +5,12 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/librarymanagement</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/libraryManagement</property>
         <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <property name="connection.username">root</property>
         <property name="connection.password">root</property>
         <property name="connection.pool_size">1000</property>
-        <property name="hbm2ddl.auto">create-drop</property>
+        <property name="hbm2ddl.auto">update</property>
 
         <mapping class="com.example.librarymanagement.model.user.UserAccount"/>
         <mapping class="com.example.librarymanagement.model.user.User"/>

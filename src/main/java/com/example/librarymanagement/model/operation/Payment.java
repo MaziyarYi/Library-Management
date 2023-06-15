@@ -2,12 +2,19 @@ package com.example.librarymanagement.model.operation;
 
 import com.example.librarymanagement.util.Enum.PaymentStatus;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class Payment {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
+    @OneToOne
     private Order order;
+
     private PaymentStatus status;
     private Long price;
     private Date paymentDate;

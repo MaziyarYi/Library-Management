@@ -3,13 +3,26 @@ package com.example.librarymanagement.model.book;
 import com.example.librarymanagement.util.Enum.BookStatus;
 import com.example.librarymanagement.util.Enum.PaymentStatus;
 
+import javax.persistence.*;
+
+@Entity
 public class Book {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
     private String name;
+
+    @OneToOne
     private Subject subject;
+
+    @OneToOne
     private Writer writer;
+
+    @OneToOne
     private Publisher publisher;
+
     private Long price;
     private BookStatus status;
 

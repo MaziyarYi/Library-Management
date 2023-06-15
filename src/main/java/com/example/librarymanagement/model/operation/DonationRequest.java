@@ -4,13 +4,22 @@ import com.example.librarymanagement.model.book.Book;
 import com.example.librarymanagement.model.user.Member;
 import com.example.librarymanagement.util.Enum.RequestStatus;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class DonationRequest {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
+    @OneToOne
     private Member donator;
+
+    @OneToOne
     private Book book;
+
     private Date donationDate;
     private RequestStatus status ;
 
