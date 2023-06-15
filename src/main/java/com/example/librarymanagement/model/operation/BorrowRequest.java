@@ -14,10 +14,10 @@ public class BorrowRequest {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     private Member borrower;
 
-    @OneToOne
+    @ManyToOne
     private Book book;
 
     private Date fromDate;

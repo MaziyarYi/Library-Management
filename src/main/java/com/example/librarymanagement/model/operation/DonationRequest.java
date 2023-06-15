@@ -14,10 +14,10 @@ public class DonationRequest {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     private Member donator;
 
-    @OneToOne
+    @ManyToOne
     private Book book;
 
     private Date donationDate;

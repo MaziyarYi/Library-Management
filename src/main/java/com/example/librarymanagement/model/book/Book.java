@@ -14,13 +14,13 @@ public class Book {
 
     private String name;
 
-    @OneToOne
+    @ManyToOne
     private Subject subject;
 
-    @OneToOne
+    @ManyToOne
     private Writer writer;
 
-    @OneToOne
+    @ManyToOne
     private Publisher publisher;
 
     private Long price;

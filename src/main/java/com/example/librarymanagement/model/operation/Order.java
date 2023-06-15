@@ -14,10 +14,10 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     private Member buyer;
 
-    @OneToOne
+    @ManyToOne
     private Book book;
 
     private Date orderDate;
