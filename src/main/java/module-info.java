@@ -16,6 +16,4 @@ module com.example.librarymanagement {
 
     opens com.example.librarymanagement to javafx.fxml;
     exports com.example.librarymanagement;
-    exports com.example.librarymanagement.controller;
-    opens com.example.librarymanagement.controller to javafx.fxml;
 }

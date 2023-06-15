@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="335.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagement.controller.LoginController">
+    <children>
+        <AnchorPane layoutX="199.0" prefHeight="336.0" prefWidth="340.0" style="-fx-background-color: #051224;">
+            <children>
+                <VBox layoutX="93.0" layoutY="163.0" prefHeight="106.0" prefWidth="170.0" spacing="15.0">
+                    <children>
+                        <ComboBox fx:id="typeComboBox" />
+                        <TextField fx:id="usernameField" promptText="ID" />
+                        <PasswordField fx:id="passwordField" promptText="password" />
+                        <Button onAction="#login" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="login" textFill="#337243" />
+                    </children>
+                </VBox>
+                <Label fx:id="warningLabel" layoutX="2.0" layoutY="296.0" prefHeight="17.0" prefWidth="340.0" />
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="192.0" fitWidth="198.0" layoutY="8.0">
+            <Image url="@picture/library.jpg"/>
+        </ImageView>
+    </children>
+</AnchorPane>
